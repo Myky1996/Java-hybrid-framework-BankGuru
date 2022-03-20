@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="Bankguru">
+<parameter name = "url" value = "https://demo.guru99.com/v4/" />
+
+<listeners>
+        <!-- <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
+<!--         <listener class-name="commons.MethodListener"/>
+        <listener class-name="reportConfig.ExtentTestListener"/> -->
+ -->        <!-- <listener class-name="reportConfig.ReportNGListener"/> -->
+        
+</listeners>
+
+  <!-- <test name="Run on Firefox">
+  <parameter name = "browser" value ="firefox"/>
+    <classes>
+      <class name="com.hrm.employee.Level_19_Generate_Fake_Data"/>
+    </classes>
+  </test> -->
+  
+  <test name="Run on Chrome">
+  <parameter name = "browser" value = "chrome"/>
+    <classes>
+      <class name="com.bankguru.payment.Module_02_New_Customer"/>
+    </classes>
+  </test> 
+  
+</suite> 
